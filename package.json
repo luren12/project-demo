@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "eslint": "npm run eslint:js && npm run eslint:ts && npm run eslint:vue",
+    "prepare":"husky install"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -13,10 +15,18 @@
     "vuex": "^4.0.0"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.5.4",
+    "@tencent/eslint-config-tencent": "^1.0.4",
+    "@tencent/stylelint-config-tencent": "^1.0.10",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
-    "@vue/cli-service": "~5.0.0"
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^8.16.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-vue": "^9.0.1",
+    "husky": "^8.0.1",
+    "vue-eslint-parser": "^9.0.2"
   },
   "browserslist": [
     "> 1%",
